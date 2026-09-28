@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Permite que a página se adapte a celulares e tablets. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Liga o arquivo HTML ao arquivo CSS. -->
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>Você decide seu futuro profissional</title>
+</head>
+
+<body>
+
+    <!-- Caixa que contém todo o programa. -->
+    <div class="caixa-principal">
+
+        <h1>Você decide seu futuro profissional</h1>
+
+        <p class="introducao">
+            Escolha como agir em situações relacionadas ao estágio,
+            ao primeiro emprego e ao trabalho com carteira assinada.
+        </p>
+
+        <!-- O JavaScript colocará as perguntas nesta caixa. -->
+        <div class="caixa-perguntas"></div>
+
+        <!-- O JavaScript criará os botões das respostas nesta caixa. -->
+        <div class="caixa-alternativas"></div>
+
+        <!-- Esta caixa ficará escondida até o questionário terminar. -->
+        <div class="caixa-resultado">
+
+            <h2>Seu perfil profissional</h2>
+
+            <!-- O resultado será colocado neste parágrafo. -->
+            <p class="texto-resultado"></p>
+
+            <!-- Botão utilizado para reiniciar o questionário. -->
+            <button class="novamente-btn">
+                Jogar novamente
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Arquivos JavaScript carregados como módulos. -->
+    <script type="module" src="js/aleatorio.js"></script>
+    <script type="module" src="js/perguntas.js"></script>
+    <script type="module" src="js/script.js"></script>
+
+</body>
+
+</html>
